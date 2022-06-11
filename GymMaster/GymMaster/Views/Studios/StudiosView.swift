@@ -15,9 +15,8 @@ struct StudiosView: View {
         NavigationView {
             List {
                 ForEach(Array(studioStorage.allStudios.enumerated()), id: \.0) {i, studio in
-                    
                     NavigationLink(destination: StudioDetailView(), tag: i, selection: $indexNewStudio) {
-                        StudioDetailView()
+                        StudioRowView(studio: studio)
                     }
                 }
                 .onDelete(perform: { indexSet in

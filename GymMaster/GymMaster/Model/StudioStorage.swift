@@ -28,6 +28,18 @@ class StudioStorage: ObservableObject {
         }
     }
     
+    init(numberOfRandomStudios: Int = 10) {
+        for _ in 0..<numberOfRandomStudios {
+            createStudio()
+        }
+    }
+    
+    @discardableResult func createStudio() -> Studio {
+        let newStudio = Studio(random: true)
+        allStudios.append(newStudio)
+        return newStudio
+    }
+    
     @discardableResult func newStudio() -> (Int, Studio) {
         let newStudio = Studio()
         allStudios.append(newStudio)

@@ -14,13 +14,29 @@
 		9252F8602854BF9800B193DD /* MitgliederStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9252F85F2854BF9800B193DD /* MitgliederStorage.swift */; };
 		9252F8622854BFA200B193DD /* PersonalStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9252F8612854BFA200B193DD /* PersonalStorage.swift */; };
 		9252F8642854C52800B193DD /* StudioDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9252F8632854C52800B193DD /* StudioDetailView.swift */; };
-		9252F8662854D23700B193DD /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9252F8652854D23700B193DD /* DetailView.swift */; };
 		928BAA982854B64700BCF272 /* GymMasterApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 928BAA972854B64700BCF272 /* GymMasterApp.swift */; };
 		928BAA9A2854B64700BCF272 /* StudiosView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 928BAA992854B64700BCF272 /* StudiosView.swift */; };
 		928BAA9C2854B64800BCF272 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 928BAA9B2854B64800BCF272 /* Assets.xcassets */; };
 		928BAA9F2854B64800BCF272 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 928BAA9E2854B64800BCF272 /* Preview Assets.xcassets */; };
 		928BAAA82854B74300BCF272 /* FinanzenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 928BAAA72854B74300BCF272 /* FinanzenView.swift */; };
+		92AC293D2854DEAE00487CE8 /* StudioRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92AC293C2854DEAE00487CE8 /* StudioRowView.swift */; };
+		92AC29402854DFEF00487CE8 /* KarteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92AC293F2854DFEF00487CE8 /* KarteView.swift */; };
+		92AC29442854E10100487CE8 /* SwipeRightToPopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92AC29422854E10100487CE8 /* SwipeRightToPopViewController.swift */; };
+		92AC29452854E10100487CE8 /* SlideAnimatedTransitioning.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92AC29432854E10100487CE8 /* SlideAnimatedTransitioning.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		92AC29232854D56C00487CE8 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		9252F8552854B9FA00B193DD /* Studio.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Studio.swift; sourceTree = "<group>"; };
@@ -30,13 +46,16 @@
 		9252F85F2854BF9800B193DD /* MitgliederStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MitgliederStorage.swift; sourceTree = "<group>"; };
 		9252F8612854BFA200B193DD /* PersonalStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalStorage.swift; sourceTree = "<group>"; };
 		9252F8632854C52800B193DD /* StudioDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudioDetailView.swift; sourceTree = "<group>"; };
-		9252F8652854D23700B193DD /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 		928BAA942854B64700BCF272 /* GymMaster.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GymMaster.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		928BAA972854B64700BCF272 /* GymMasterApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GymMasterApp.swift; sourceTree = "<group>"; };
 		928BAA992854B64700BCF272 /* StudiosView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudiosView.swift; sourceTree = "<group>"; };
 		928BAA9B2854B64800BCF272 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		928BAA9E2854B64800BCF272 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		928BAAA72854B74300BCF272 /* FinanzenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinanzenView.swift; sourceTree = "<group>"; };
+		92AC293C2854DEAE00487CE8 /* StudioRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudioRowView.swift; sourceTree = "<group>"; };
+		92AC293F2854DFEF00487CE8 /* KarteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KarteView.swift; sourceTree = "<group>"; };
+		92AC29422854E10100487CE8 /* SwipeRightToPopViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwipeRightToPopViewController.swift; sourceTree = "<group>"; };
+		92AC29432854E10100487CE8 /* SlideAnimatedTransitioning.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SlideAnimatedTransitioning.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,7 +74,7 @@
 			children = (
 				928BAA992854B64700BCF272 /* StudiosView.swift */,
 				9252F8632854C52800B193DD /* StudioDetailView.swift */,
-				9252F8652854D23700B193DD /* DetailView.swift */,
+				92AC293C2854DEAE00487CE8 /* StudioRowView.swift */,
 			);
 			path = Studios;
 			sourceTree = "<group>";
@@ -73,6 +92,7 @@
 			children = (
 				928BAA962854B64700BCF272 /* GymMaster */,
 				928BAA952854B64700BCF272 /* Products */,
+				92AC29172854D54C00487CE8 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -87,6 +107,7 @@
 		928BAA962854B64700BCF272 /* GymMaster */ = {
 			isa = PBXGroup;
 			children = (
+				92AC29412854E0CE00487CE8 /* LazyPop */,
 				928BAAA62854B6B800BCF272 /* Views */,
 				928BAAA52854B6A300BCF272 /* Model */,
 				928BAA972854B64700BCF272 /* GymMasterApp.swift */,
@@ -120,10 +141,35 @@
 		928BAAA62854B6B800BCF272 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				92AC293E2854DFDC00487CE8 /* Karte */,
 				9252F85C2854BF6D00B193DD /* Finanzen */,
 				9252F85B2854BF6600B193DD /* Studios */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		92AC29172854D54C00487CE8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		92AC293E2854DFDC00487CE8 /* Karte */ = {
+			isa = PBXGroup;
+			children = (
+				92AC293F2854DFEF00487CE8 /* KarteView.swift */,
+			);
+			path = Karte;
+			sourceTree = "<group>";
+		};
+		92AC29412854E0CE00487CE8 /* LazyPop */ = {
+			isa = PBXGroup;
+			children = (
+				92AC29432854E10100487CE8 /* SlideAnimatedTransitioning.swift */,
+				92AC29422854E10100487CE8 /* SwipeRightToPopViewController.swift */,
+			);
+			path = LazyPop;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -136,6 +182,7 @@
 				928BAA902854B64700BCF272 /* Sources */,
 				928BAA912854B64700BCF272 /* Frameworks */,
 				928BAA922854B64700BCF272 /* Resources */,
+				92AC29232854D56C00487CE8 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -196,12 +243,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				92AC29402854DFEF00487CE8 /* KarteView.swift in Sources */,
 				928BAA9A2854B64700BCF272 /* StudiosView.swift in Sources */,
+				92AC293D2854DEAE00487CE8 /* StudioRowView.swift in Sources */,
 				928BAAA82854B74300BCF272 /* FinanzenView.swift in Sources */,
 				9252F8622854BFA200B193DD /* PersonalStorage.swift in Sources */,
 				928BAA982854B64700BCF272 /* GymMasterApp.swift in Sources */,
+				92AC29442854E10100487CE8 /* SwipeRightToPopViewController.swift in Sources */,
 				9252F85A2854BB5D00B193DD /* Personal.swift in Sources */,
-				9252F8662854D23700B193DD /* DetailView.swift in Sources */,
+				92AC29452854E10100487CE8 /* SlideAnimatedTransitioning.swift in Sources */,
 				9252F8642854C52800B193DD /* StudioDetailView.swift in Sources */,
 				9252F8582854BB5700B193DD /* Mitglied.swift in Sources */,
 				9252F8602854BF9800B193DD /* MitgliederStorage.swift in Sources */,
