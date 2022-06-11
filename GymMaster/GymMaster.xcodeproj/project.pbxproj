@@ -1,0 +1,412 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9252F8562854B9FA00B193DD /* Studio.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9252F8552854B9FA00B193DD /* Studio.swift */; };
+		9252F8582854BB5700B193DD /* Mitglied.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9252F8572854BB5700B193DD /* Mitglied.swift */; };
+		9252F85A2854BB5D00B193DD /* Personal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9252F8592854BB5D00B193DD /* Personal.swift */; };
+		9252F85E2854BF8B00B193DD /* StudioStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9252F85D2854BF8B00B193DD /* StudioStorage.swift */; };
+		9252F8602854BF9800B193DD /* MitgliederStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9252F85F2854BF9800B193DD /* MitgliederStorage.swift */; };
+		9252F8622854BFA200B193DD /* PersonalStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9252F8612854BFA200B193DD /* PersonalStorage.swift */; };
+		9252F8642854C52800B193DD /* StudioDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9252F8632854C52800B193DD /* StudioDetailView.swift */; };
+		9252F8662854D23700B193DD /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9252F8652854D23700B193DD /* DetailView.swift */; };
+		928BAA982854B64700BCF272 /* GymMasterApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 928BAA972854B64700BCF272 /* GymMasterApp.swift */; };
+		928BAA9A2854B64700BCF272 /* StudiosView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 928BAA992854B64700BCF272 /* StudiosView.swift */; };
+		928BAA9C2854B64800BCF272 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 928BAA9B2854B64800BCF272 /* Assets.xcassets */; };
+		928BAA9F2854B64800BCF272 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 928BAA9E2854B64800BCF272 /* Preview Assets.xcassets */; };
+		928BAAA82854B74300BCF272 /* FinanzenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 928BAAA72854B74300BCF272 /* FinanzenView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		9252F8552854B9FA00B193DD /* Studio.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Studio.swift; sourceTree = "<group>"; };
+		9252F8572854BB5700B193DD /* Mitglied.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mitglied.swift; sourceTree = "<group>"; };
+		9252F8592854BB5D00B193DD /* Personal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Personal.swift; sourceTree = "<group>"; };
+		9252F85D2854BF8B00B193DD /* StudioStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudioStorage.swift; sourceTree = "<group>"; };
+		9252F85F2854BF9800B193DD /* MitgliederStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MitgliederStorage.swift; sourceTree = "<group>"; };
+		9252F8612854BFA200B193DD /* PersonalStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalStorage.swift; sourceTree = "<group>"; };
+		9252F8632854C52800B193DD /* StudioDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudioDetailView.swift; sourceTree = "<group>"; };
+		9252F8652854D23700B193DD /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		928BAA942854B64700BCF272 /* GymMaster.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GymMaster.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		928BAA972854B64700BCF272 /* GymMasterApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GymMasterApp.swift; sourceTree = "<group>"; };
+		928BAA992854B64700BCF272 /* StudiosView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudiosView.swift; sourceTree = "<group>"; };
+		928BAA9B2854B64800BCF272 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		928BAA9E2854B64800BCF272 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		928BAAA72854B74300BCF272 /* FinanzenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinanzenView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		928BAA912854B64700BCF272 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9252F85B2854BF6600B193DD /* Studios */ = {
+			isa = PBXGroup;
+			children = (
+				928BAA992854B64700BCF272 /* StudiosView.swift */,
+				9252F8632854C52800B193DD /* StudioDetailView.swift */,
+				9252F8652854D23700B193DD /* DetailView.swift */,
+			);
+			path = Studios;
+			sourceTree = "<group>";
+		};
+		9252F85C2854BF6D00B193DD /* Finanzen */ = {
+			isa = PBXGroup;
+			children = (
+				928BAAA72854B74300BCF272 /* FinanzenView.swift */,
+			);
+			path = Finanzen;
+			sourceTree = "<group>";
+		};
+		928BAA8B2854B64700BCF272 = {
+			isa = PBXGroup;
+			children = (
+				928BAA962854B64700BCF272 /* GymMaster */,
+				928BAA952854B64700BCF272 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		928BAA952854B64700BCF272 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				928BAA942854B64700BCF272 /* GymMaster.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		928BAA962854B64700BCF272 /* GymMaster */ = {
+			isa = PBXGroup;
+			children = (
+				928BAAA62854B6B800BCF272 /* Views */,
+				928BAAA52854B6A300BCF272 /* Model */,
+				928BAA972854B64700BCF272 /* GymMasterApp.swift */,
+				928BAA9B2854B64800BCF272 /* Assets.xcassets */,
+				928BAA9D2854B64800BCF272 /* Preview Content */,
+			);
+			path = GymMaster;
+			sourceTree = "<group>";
+		};
+		928BAA9D2854B64800BCF272 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				928BAA9E2854B64800BCF272 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		928BAAA52854B6A300BCF272 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				9252F8552854B9FA00B193DD /* Studio.swift */,
+				9252F8572854BB5700B193DD /* Mitglied.swift */,
+				9252F8592854BB5D00B193DD /* Personal.swift */,
+				9252F85D2854BF8B00B193DD /* StudioStorage.swift */,
+				9252F85F2854BF9800B193DD /* MitgliederStorage.swift */,
+				9252F8612854BFA200B193DD /* PersonalStorage.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		928BAAA62854B6B800BCF272 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				9252F85C2854BF6D00B193DD /* Finanzen */,
+				9252F85B2854BF6600B193DD /* Studios */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		928BAA932854B64700BCF272 /* GymMaster */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 928BAAA22854B64800BCF272 /* Build configuration list for PBXNativeTarget "GymMaster" */;
+			buildPhases = (
+				928BAA902854B64700BCF272 /* Sources */,
+				928BAA912854B64700BCF272 /* Frameworks */,
+				928BAA922854B64700BCF272 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GymMaster;
+			productName = GymMaster;
+			productReference = 928BAA942854B64700BCF272 /* GymMaster.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		928BAA8C2854B64700BCF272 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1330;
+				LastUpgradeCheck = 1330;
+				TargetAttributes = {
+					928BAA932854B64700BCF272 = {
+						CreatedOnToolsVersion = 13.3;
+					};
+				};
+			};
+			buildConfigurationList = 928BAA8F2854B64700BCF272 /* Build configuration list for PBXProject "GymMaster" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 928BAA8B2854B64700BCF272;
+			productRefGroup = 928BAA952854B64700BCF272 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				928BAA932854B64700BCF272 /* GymMaster */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		928BAA922854B64700BCF272 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				928BAA9F2854B64800BCF272 /* Preview Assets.xcassets in Resources */,
+				928BAA9C2854B64800BCF272 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		928BAA902854B64700BCF272 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				928BAA9A2854B64700BCF272 /* StudiosView.swift in Sources */,
+				928BAAA82854B74300BCF272 /* FinanzenView.swift in Sources */,
+				9252F8622854BFA200B193DD /* PersonalStorage.swift in Sources */,
+				928BAA982854B64700BCF272 /* GymMasterApp.swift in Sources */,
+				9252F85A2854BB5D00B193DD /* Personal.swift in Sources */,
+				9252F8662854D23700B193DD /* DetailView.swift in Sources */,
+				9252F8642854C52800B193DD /* StudioDetailView.swift in Sources */,
+				9252F8582854BB5700B193DD /* Mitglied.swift in Sources */,
+				9252F8602854BF9800B193DD /* MitgliederStorage.swift in Sources */,
+				9252F8562854B9FA00B193DD /* Studio.swift in Sources */,
+				9252F85E2854BF8B00B193DD /* StudioStorage.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		928BAAA02854B64800BCF272 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		928BAAA12854B64800BCF272 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		928BAAA32854B64800BCF272 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"GymMaster/Preview Content\"";
+				DEVELOPMENT_TEAM = GZ974224RK;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = kevinpauer.GymMaster;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		928BAAA42854B64800BCF272 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"GymMaster/Preview Content\"";
+				DEVELOPMENT_TEAM = GZ974224RK;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = kevinpauer.GymMaster;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		928BAA8F2854B64700BCF272 /* Build configuration list for PBXProject "GymMaster" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				928BAAA02854B64800BCF272 /* Debug */,
+				928BAAA12854B64800BCF272 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		928BAAA22854B64800BCF272 /* Build configuration list for PBXNativeTarget "GymMaster" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				928BAAA32854B64800BCF272 /* Debug */,
+				928BAAA42854B64800BCF272 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 928BAA8C2854B64700BCF272 /* Project object */;
+}
