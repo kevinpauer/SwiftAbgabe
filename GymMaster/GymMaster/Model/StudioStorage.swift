@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import Combine
 
 class StudioStorage: ObservableObject {
     @Published var allStudios: [Studio] = []
@@ -25,12 +26,6 @@ class StudioStorage: ObservableObject {
             print("Successfully loaded all studios")
         } catch {
             print("StudioStorage init err: \(error)")
-        }
-    }
-    
-    init(numberOfRandomStudios: Int = 10) {
-        for _ in 0..<numberOfRandomStudios {
-            createStudio()
         }
     }
     
@@ -65,5 +60,11 @@ class StudioStorage: ObservableObject {
             print("Error saving studios: \(error)")
         }
         return false
+    }
+    
+    init(numberOfRandomStudios: Int = 10) {
+        for _ in 0..<numberOfRandomStudios {
+            createStudio()
+        }
     }
 }
