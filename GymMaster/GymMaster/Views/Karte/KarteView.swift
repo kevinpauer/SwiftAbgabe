@@ -28,19 +28,15 @@ struct MapButtonStyle: ButtonStyle {
 
 struct KarteView: View {
 
-    @State var studioStorage = StudioStorage()
-    var annotatedItems: [AnnotatedItem] = []
+    @StateObject var studioStorage: StudioStorage
+    @State var annotatedItems: [AnnotatedItem] = []
     @State var region: MKCoordinateRegion = MKCoordinateRegion(center: CLLocationCoordinate2D(latitude: 48.783333, longitude: 9.183333), span: MKCoordinateSpan(latitudeDelta: 20, longitudeDelta: 20))
     @State var currentZoom: Double = 10
 
-    mutating func fillAnnotatedItems(studioStorage: StudioStorage) {
+    func fillAnnotatedItems() {
         for item in studioStorage.allStudios {
             annotatedItems.append(AnnotatedItem(name: item.name, coordinate: CLLocationCoordinate2D(latitude: item.latitude, longitude: item.longitude)))
         }
-    }
-    
-    init() {
-        fillAnnotatedItems(studioStorage: studioStorage)
     }
     
     var body: some View {
@@ -49,7 +45,6 @@ struct KarteView: View {
                 annotationItems: annotatedItems) { item in
                 MapMarker(coordinate: item.coordinate)}
             .edgesIgnoringSafeArea(.all)
-            
             VStack {
                 Spacer()
                 HStack {
@@ -100,7 +95,7 @@ struct KarteView: View {
                     }
                 }
                 Spacer()
-            }
+            }.onAppear(perform: {fillAnnotatedItems()})
         }
     }
 }
@@ -108,7 +103,7 @@ struct KarteView: View {
 
 struct KarteView_Previews: PreviewProvider {
     static var previews: some View {
-        KarteView()
+        KarteView(studioStorage: StudioStorage())
     }
 }
 

@@ -18,9 +18,9 @@ struct Studio: Identifiable, Hashable, Codable {
     
     init(random: Bool = false) {
         if random {
-            latitude = drand48() * Double.random(in: 6...15)
-            longitude = drand48() * Double.random(in: 47...55)
-            name = "Gym"
+            latitude = Double.random(in: 48...50)
+            longitude = Double.random(in: 8...11)
+            name = "Fitness"
             mitgliedschaft = 22.50
             maintanence = 10000
         }

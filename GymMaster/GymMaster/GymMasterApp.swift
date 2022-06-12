@@ -20,7 +20,7 @@ struct GymMasterApp: App {
                     StudiosView(studioStorage: studioStorage).tabItem(){
                         Text("Studios")
                         Image(systemName: "building")}
-                    KarteView().tabItem(){
+                    KarteView(studioStorage: studioStorage).tabItem(){
                         Text("Karte")
                         Image(systemName: "map")}
                     FinanzenView().tabItem(){
