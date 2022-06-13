@@ -11,13 +11,15 @@ import SwiftUI
 struct GymMasterApp: App {
     
     @StateObject var studioStorage = StudioStorage(numberOfRandomStudios: 10)
+    @StateObject var mitgliederStorage = MitgliederStorage(numberOfRandomMitglieder: 10)
+    @StateObject var personalStorage = PersonalStorage()
     
     var body: some Scene {
         WindowGroup {
             VStack{
                 Text("GymMaster").font(.title)
                 TabView() {
-                    StudiosView(studioStorage: studioStorage).tabItem(){
+                    StudiosView(studioStorage: studioStorage, mitgliederStorage: mitgliederStorage, personalStorage: personalStorage).tabItem(){
                         Text("Studios")
                         Image(systemName: "building")}
                     KarteView(studioStorage: studioStorage).tabItem(){

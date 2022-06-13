@@ -9,13 +9,15 @@ import SwiftUI
 
 struct StudiosView: View {
     @StateObject var studioStorage: StudioStorage
+    @StateObject var mitgliederStorage: MitgliederStorage
+    @StateObject var personalStorage: PersonalStorage
     @State private var indexNewStudio: Int?
     
     var body: some View {
         NavigationView {
             List {
                 ForEach(Array(studioStorage.allStudios.enumerated()), id: \.0) {i, studio in
-                    NavigationLink(destination: StudioDetailView(), tag: i, selection: $indexNewStudio) {
+                    NavigationLink(destination: StudioDetailView(studioStorage: studioStorage, personalStorage: personalStorage, mitgliederStorage: mitgliederStorage, studioID: studio.id), tag: i, selection: $indexNewStudio) {
                         StudioRowView(studio: studio)
                     }
                 }
@@ -55,6 +57,6 @@ struct StudiosView: View {
 
 struct StudiosView_Previews: PreviewProvider {
     static var previews: some View {
-        StudiosView(studioStorage: StudioStorage())
+        StudiosView(studioStorage: StudioStorage(), mitgliederStorage: MitgliederStorage(), personalStorage: PersonalStorage())
     }
 }

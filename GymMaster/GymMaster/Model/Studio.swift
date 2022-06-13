@@ -14,7 +14,7 @@ struct Studio: Identifiable, Hashable, Codable {
     var mitgliedschaft: Double = 0.0
     var latitude: Double = 0.0
     var longitude: Double = 0.0
-    var maintanence: Double = 0.0
+    var maintenance: Double = 0.0
     
     init(random: Bool = false) {
         if random {
@@ -22,7 +22,7 @@ struct Studio: Identifiable, Hashable, Codable {
             longitude = Double.random(in: 8...11)
             name = "Fitness"
             mitgliedschaft = 22.50
-            maintanence = 10000
+            maintenance = 10000
         }
     }
 }

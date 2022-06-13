@@ -54,4 +54,16 @@ class MitgliederStorage: ObservableObject {
         }
         return false
     }
+    
+    @discardableResult func createMitglied() -> Mitglied {
+        let newMitglied = Mitglied(random: true)
+        allMitglieder.append(newMitglied)
+        return newMitglied
+    }
+    
+    init(numberOfRandomMitglieder: Int = 10) {
+        for _ in 0..<numberOfRandomMitglieder {
+            createMitglied()
+        }
+    }
 }

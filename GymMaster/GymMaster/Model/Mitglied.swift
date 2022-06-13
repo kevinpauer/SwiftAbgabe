@@ -14,7 +14,11 @@ struct Mitglied: Identifiable, Hashable, Codable {
     var adresse: String = ""
     var studioId: Int = 0
     
-//    init(random: Bool = false) {
-//        <#code#>
-//    }
+    init(random: Bool = false) {
+        name = "Peter"
+        alter = Int.random(in: 0...99)
+        id = Int.random(in: 0...999999999)
+        adresse = "Abcstraße 5"
+        studioId = 0
+    }
 }
