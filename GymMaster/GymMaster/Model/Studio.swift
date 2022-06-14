@@ -9,7 +9,7 @@ import Foundation
 
 struct Studio: Identifiable, Hashable, Codable {
     
-    var id: Int = Int.random(in: 0...10000000)
+    var id: Int = Int.random(in: 0...100)
     var name: String = ""
     var mitgliedschaft: Double = 0.0
     var latitude: Double = 0.0

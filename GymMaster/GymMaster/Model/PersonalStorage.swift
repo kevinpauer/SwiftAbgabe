@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import Combine
 
 class PersonalStorage: ObservableObject {
     @Published var allPersonal: [Personal] = []
@@ -27,10 +28,19 @@ class PersonalStorage: ObservableObject {
             print("PersonalStorage init err: \(error)")
         }
     }
+	
+	@discardableResult func createPersonal() -> Personal {
+		let newPersonal = Personal(random: true)
+		allPersonal.append(newPersonal)
+		saveChanges()
+		return newPersonal
+	}
     
-    @discardableResult func newPersonal() -> (Int, Personal) {
-        let newPersonal = Personal()
+	@discardableResult func newPersonal(studioId: Int) -> (Int, Personal) {
+        var newPersonal = Personal()
+		newPersonal.studioId = studioId
         allPersonal.append(newPersonal)
+		saveChanges()
         let index: Int = allPersonal.firstIndex(of: newPersonal)!
         return(index, newPersonal)
     }
@@ -53,5 +63,11 @@ class PersonalStorage: ObservableObject {
             print("Error saving personal: \(error)")
         }
         return false
+    }
+  
+    init(numberOfRandomPersonal: Int = 10) {
+        for _ in 0..<numberOfRandomPersonal {
+            createPersonal()
+        }
     }
 }

@@ -12,7 +12,7 @@ struct GymMasterApp: App {
     
     @StateObject var studioStorage = StudioStorage(numberOfRandomStudios: 10)
     @StateObject var mitgliederStorage = MitgliederStorage(numberOfRandomMitglieder: 10)
-    @StateObject var personalStorage = PersonalStorage()
+    @StateObject var personalStorage = PersonalStorage(numberOfRandomPersonal: 50)
     
     var body: some Scene {
         WindowGroup {

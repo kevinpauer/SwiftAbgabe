@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import Combine
 
 class MitgliederStorage: ObservableObject {
     @Published var allMitglieder: [Mitglied] = []

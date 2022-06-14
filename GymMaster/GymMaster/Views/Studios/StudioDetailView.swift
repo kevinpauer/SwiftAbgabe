@@ -135,7 +135,7 @@ struct StudioDetailView: View {
                 NavigationLink(destination: MitgliederView()){
                     Text("Mitglieder")
                 }
-                NavigationLink(destination: PersonalView()){
+				NavigationLink(destination: PersonalView(personalStorage: personalStorage, studioId: studioID)){
                     Text("Personal")
                 }
             }
