@@ -34,6 +34,7 @@ struct KarteView: View {
     @State var currentZoom: Double = 10
 
     func fillAnnotatedItems() {
+        annotatedItems = []
         for item in studioStorage.allStudios {
             annotatedItems.append(AnnotatedItem(name: item.name, coordinate: CLLocationCoordinate2D(latitude: item.latitude, longitude: item.longitude)))
         }
