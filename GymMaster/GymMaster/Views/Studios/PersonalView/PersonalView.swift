@@ -13,9 +13,10 @@ struct PersonalView: View {
     @State var studioId: Int
     @State var personal: [Personal] = []
     @State var indexOfPerson: Int = 0
+    @State var newPersonal: Personal = Personal(studioID: 0)
     var body: some View {
         QGrid(personal, columns: 2) {person in
-            NavigationLink(destination: PersonalDetailView(personal: person)) {
+            NavigationLink(destination: PersonalDetailView(personal: person, personalStorage: personalStorage)) {
                     GridCell(personal: person)
             }
         }
@@ -29,7 +30,7 @@ struct PersonalView: View {
         )
         .toolbar{
             ToolbarItem(placement: ToolbarItemPlacement.navigationBarTrailing) {
-                NavigationLink(destination: PersonalDetailView(personal: Personal(random: false, studioID: studioId))) {
+                NavigationLink(destination: PersonalDetailView(personal: Personal(random: false, studioID: studioId), personalStorage: personalStorage)) {
                     Image(systemName: "plus")
                 }
             }

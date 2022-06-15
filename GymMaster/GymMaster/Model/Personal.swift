@@ -16,13 +16,13 @@ struct Personal: Identifiable, Hashable, Codable {
     var studioId: Int = 0
     
     init(random: Bool = false, studioID: Int) {
+        id = Int.random(in: 0...100000000)
+        self.studioId = studioID
 		if random {
 			name = "Bubatz Beispiel"
 			alter = 69
-			id = Int.random(in: 0...100000000)
 			adresse = "Beispielgasse 69"
 			gehalt = 187
-            self.studioId = studioID
 		}
     }
 }

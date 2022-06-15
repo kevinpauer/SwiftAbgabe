@@ -36,9 +36,12 @@ class PersonalStorage: ObservableObject {
 		return newPersonal
 	}
     
-	func newPersonal(studioId: Int) {
-        let newPersonal = Personal(random: true, studioID: studioId)
+    
+	@discardableResult func newPersonal(studioId: Int) -> Personal {
+        let newPersonal = Personal(random: false, studioID: studioId)
         allPersonal.append(newPersonal)
+        saveChanges()
+        return newPersonal
     }
     
     func removePersonal(indexSet: IndexSet) {
