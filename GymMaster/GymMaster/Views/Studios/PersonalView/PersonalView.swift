@@ -9,45 +9,47 @@ import SwiftUI
 import QGrid
 
 struct PersonalView: View {
-  @StateObject var personalStorage: PersonalStorage
-	@State var studioId: Int
-	@State var personal: [Personal] = []
-	@State var indexOfPerson: Int = 0
-	@State var selectedPersonal: Personal = Personal()
-  var body: some View {
-	  Button("Add new User") {
-			(indexOfPerson,_) = personalStorage.newPersonal(studioId: studioId)
-	  }
-	  Text("Details View tbd \(String(personal.count))")
-		NavigationLink(destination: PersonalDetailView(personal: selectedPersonal)) {
-												Text("Do Something")
-										}
-		QGrid(personal, columns: 2) {
-			GridCell(personal: $0)
-		}
-			.onAppear(
-				perform: {
-					personal = personalStorage.allPersonal.filter {
-					personal in return personal.studioId == studioId
-				}
-				print(personal)}
-			)
-  }
+    @StateObject var personalStorage: PersonalStorage
+    @State var studioId: Int
+    @State var personal: [Personal] = []
+    @State var indexOfPerson: Int = 0
+    var body: some View {
+        QGrid(personal, columns: 2) {person in
+            NavigationLink(destination: PersonalDetailView(personal: person)) {
+                    GridCell(personal: person)
+            }
+        }
+        .lazyPop()
+        .onAppear(
+            perform: {
+                personal = personalStorage.allPersonal.filter {
+                    personal in return personal.studioId == studioId
+                }
+            }
+        )
+        .toolbar{
+            ToolbarItem(placement: ToolbarItemPlacement.navigationBarTrailing) {
+                NavigationLink(destination: PersonalDetailView(personal: Personal(random: false, studioID: studioId))) {
+                    Image(systemName: "plus")
+                }
+            }
+        }
+    }
 }
 
 struct GridCell: View {
     var personal: Personal
     var body: some View {
-		VStack() {
-        Image(systemName: "person")
+        VStack {
+            Image(systemName: "person")
                 .resizable()
                 .scaledToFit()
                 .clipShape(Circle())
                 .shadow(color: .primary, radius: 3)
                 .padding([.horizontal, .top], 7)
-        Text(personal.name).lineLimit(1)
-      }
-	}
+            Text(personal.name).lineLimit(1)
+        }
+    }
 }
 
 struct PersonalView_Previews: PreviewProvider {

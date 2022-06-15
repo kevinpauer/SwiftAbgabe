@@ -11,8 +11,8 @@ import SwiftUI
 struct GymMasterApp: App {
     
     @StateObject var studioStorage = StudioStorage(numberOfRandomStudios: 10)
-    @StateObject var mitgliederStorage = MitgliederStorage(numberOfRandomMitglieder: 10)
-    @StateObject var personalStorage = PersonalStorage(numberOfRandomPersonal: 50)
+    @StateObject var mitgliederStorage = MitgliederStorage()
+    @StateObject var personalStorage = PersonalStorage(numberOfRandomPersonal: 0)
     
     var body: some Scene {
         WindowGroup {

@@ -8,14 +8,14 @@
 import SwiftUI
 
 struct PersonalDetailView: View {
-  @State var personal: Personal
+    @State var personal: Personal
     var body: some View {
-        Text("Details View tbd")
+        Text("Details View tbd \(personal.id)")
     }
 }
 
 struct PersonalDetailView_Previews: PreviewProvider {
     static var previews: some View {
-        PersonalDetailView(personal: Personal())
+        PersonalDetailView(personal: Personal(random: true, studioID: 0))
     }
 }

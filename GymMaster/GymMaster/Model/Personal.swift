@@ -15,14 +15,14 @@ struct Personal: Identifiable, Hashable, Codable {
     var gehalt: Double = 0.0
     var studioId: Int = 0
     
-    init(random: Bool = false) {
+    init(random: Bool = false, studioID: Int) {
 		if random {
 			name = "Bubatz Beispiel"
 			alter = 69
 			id = Int.random(in: 0...100000000)
 			adresse = "Beispielgasse 69"
 			gehalt = 187
-			studioId = Int.random(in: 0...9)
+            self.studioId = studioID
 		}
     }
 }
