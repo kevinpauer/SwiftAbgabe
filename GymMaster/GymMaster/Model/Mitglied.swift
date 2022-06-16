@@ -14,11 +14,13 @@ struct Mitglied: Identifiable, Hashable, Codable {
     var adresse: String = ""
     var studioId: Int = 0
     
-    init(random: Bool = false) {
-        name = "Peter"
-        alter = Int.random(in: 0...99)
-        id = Int.random(in: 0...999999999)
-        adresse = "Abcstraße 5"
-        studioId = 0
+    init(random: Bool = false, studioID: Int) {
+        id = Int.random(in: 0...100000000)
+        self.studioId = studioID
+        if random {
+            name = "Bubatz Beispiel"
+            alter = 69
+            adresse = "Beispielgasse 69"
+        }
     }
 }

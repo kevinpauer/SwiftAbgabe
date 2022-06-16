@@ -32,9 +32,6 @@ struct FinanzenView: View {
                 ausgaben += personalStorage.allPersonal.map({$0.gehalt}).reduce(0, +)
                 
                 values.append(ausgaben)
-                
-                einnahmen = 100000
-                
                 values.append(einnahmen)
             })
     }

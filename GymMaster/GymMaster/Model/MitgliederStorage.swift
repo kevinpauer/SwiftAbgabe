@@ -29,8 +29,8 @@ class MitgliederStorage: ObservableObject {
         }
     }
     
-    @discardableResult func newMitglied() -> (Int, Mitglied) {
-        let newMitglied = Mitglied()
+    @discardableResult func newMitglied(studioID: Int) -> (Int, Mitglied) {
+        let newMitglied = Mitglied(studioID: studioID)
         allMitglieder.append(newMitglied)
         let index: Int = allMitglieder.firstIndex(of: newMitglied)!
         return(index, newMitglied)
@@ -57,7 +57,7 @@ class MitgliederStorage: ObservableObject {
     }
     
     @discardableResult func createMitglied() -> Mitglied {
-        let newMitglied = Mitglied(random: true)
+        let newMitglied = Mitglied(random: true, studioID: 0)
         allMitglieder.append(newMitglied)
         return newMitglied
     }

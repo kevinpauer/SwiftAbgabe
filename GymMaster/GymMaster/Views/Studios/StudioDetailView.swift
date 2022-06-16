@@ -132,7 +132,7 @@ struct StudioDetailView: View {
             }
             
             Section(header: Text("Verwaltung")) {
-                NavigationLink(destination: MitgliederView()){
+                NavigationLink(destination: MitgliederView(mitgliederStorage: mitgliederStorage, studioId: studioID)){
                     Text("Mitglieder")
                 }
 				NavigationLink(destination: PersonalView(personalStorage: personalStorage, studioId: studioID)){
