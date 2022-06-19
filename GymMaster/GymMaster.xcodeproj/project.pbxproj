@@ -26,10 +26,10 @@
 		92F4C05E28591D91006FD6BA /* PieChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92F4C05C28591D90006FD6BA /* PieChartView.swift */; };
 		92F4C05F28591D91006FD6BA /* PieSliceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92F4C05D28591D90006FD6BA /* PieSliceView.swift */; };
 		92F4C06128591DC4006FD6BA /* MitgliederView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92F4C06028591DC4006FD6BA /* MitgliederView.swift */; };
-		92F4C06428591DD0006FD6BA /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92F4C06228591DD0006FD6BA /* DetailView.swift */; };
 		92F4C06528591DD0006FD6BA /* PersonalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92F4C06328591DD0006FD6BA /* PersonalView.swift */; };
 		92F4C06828591EB0006FD6BA /* QGrid in Frameworks */ = {isa = PBXBuildFile; productRef = 92F4C06728591EB0006FD6BA /* QGrid */; };
 		92F4C06B2859226C006FD6BA /* PersonalDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92F4C06A2859226C006FD6BA /* PersonalDetailView.swift */; };
+		BE9FBEF7285A9B3A0051878B /* MitgliederDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE9FBEF6285A9B3A0051878B /* MitgliederDetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -67,9 +67,9 @@
 		92F4C05C28591D90006FD6BA /* PieChartView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PieChartView.swift; sourceTree = "<group>"; };
 		92F4C05D28591D90006FD6BA /* PieSliceView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PieSliceView.swift; sourceTree = "<group>"; };
 		92F4C06028591DC4006FD6BA /* MitgliederView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MitgliederView.swift; sourceTree = "<group>"; };
-		92F4C06228591DD0006FD6BA /* DetailView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 		92F4C06328591DD0006FD6BA /* PersonalView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonalView.swift; sourceTree = "<group>"; };
 		92F4C06A2859226C006FD6BA /* PersonalDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalDetailView.swift; sourceTree = "<group>"; };
+		BE9FBEF6285A9B3A0051878B /* MitgliederDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MitgliederDetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,11 +87,10 @@
 		9252F85B2854BF6600B193DD /* Studios */ = {
 			isa = PBXGroup;
 			children = (
+				BE9FBEF5285A9B200051878B /* MitgliederView */,
 				92F4C0692859224D006FD6BA /* PersonalView */,
 				928BAA992854B64700BCF272 /* StudiosView.swift */,
 				9252F8632854C52800B193DD /* StudioDetailView.swift */,
-				92F4C06228591DD0006FD6BA /* DetailView.swift */,
-				92F4C06028591DC4006FD6BA /* MitgliederView.swift */,
 				92AC293C2854DEAE00487CE8 /* StudioRowView.swift */,
 			);
 			path = Studios;
@@ -202,6 +201,15 @@
 			path = PersonalView;
 			sourceTree = "<group>";
 		};
+		BE9FBEF5285A9B200051878B /* MitgliederView */ = {
+			isa = PBXGroup;
+			children = (
+				92F4C06028591DC4006FD6BA /* MitgliederView.swift */,
+				BE9FBEF6285A9B3A0051878B /* MitgliederDetailView.swift */,
+			);
+			path = MitgliederView;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -280,7 +288,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				92AC29402854DFEF00487CE8 /* KarteView.swift in Sources */,
-				92F4C06428591DD0006FD6BA /* DetailView.swift in Sources */,
 				928BAA9A2854B64700BCF272 /* StudiosView.swift in Sources */,
 				92AC293D2854DEAE00487CE8 /* StudioRowView.swift in Sources */,
 				928BAAA82854B74300BCF272 /* FinanzenView.swift in Sources */,
@@ -297,6 +304,7 @@
 				9252F8602854BF9800B193DD /* MitgliederStorage.swift in Sources */,
 				9252F8562854B9FA00B193DD /* Studio.swift in Sources */,
 				92F4C06B2859226C006FD6BA /* PersonalDetailView.swift in Sources */,
+				BE9FBEF7285A9B3A0051878B /* MitgliederDetailView.swift in Sources */,
 				9252F85E2854BF8B00B193DD /* StudioStorage.swift in Sources */,
 				92F4C06528591DD0006FD6BA /* PersonalView.swift in Sources */,
 			);
